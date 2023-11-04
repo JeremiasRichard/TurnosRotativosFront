@@ -1,0 +1,16 @@
+<div id="container">
+  <div class="title-container">
+      <li class=""><a class="title-home" href="">Gestor de empleados</a></li>
+  </div>
+  <button (click)="isMenuOpen = !isMenuOpen" class="hamburger">☰</button>
+  <div class="menu-items" [class.open]="isMenuOpen">
+    <li><a href="/about" class="boton">About</a></li>
+    <li><a href="/careers" class="boton">Careers</a></li>
+    <li><a href="/empleados" class="boton">Empleados</a></li>
+    <li><a href="/conceptos" class="boton">Conceptos</a></li>
+    <li><a href="/jornadas" class="boton">Jornada</a></li>
+  </div>
+</div>
+
+
+

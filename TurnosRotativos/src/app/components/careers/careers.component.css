@@ -1,0 +1,327 @@
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.career-container{
+  display: block;
+  width: 100%;
+  overflow-y:auto;
+  height: 100%;
+}
+
+/*----  HEADER   ----*/
+
+.info-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 200vh;
+}
+
+.img-sector{
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  background-image: url("../../../assets/img/careers-section/career-banner2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-sector::after {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  content: "";
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+
+/*----  BODY   ----*/
+
+
+.career-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 170vh;
+}
+
+.title-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  width: 100%;
+  height: 20%;
+  position: relative;
+  order: 1;
+}
+
+h1{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 5rem;
+  color: #ff939a;
+  z-index: 1991;
+}
+
+.talent-community{
+  position: relative;
+  display: flex;
+  width: 30%;
+  height: 80%;
+  background-image: url("../../../assets/img/careers-section/talent-community.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.talent-community-sector{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:80vh;
+}
+
+.text-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  width: 40%;
+  height: 80%;
+  border: 0.5px solid rgb(211, 209, 209);
+}
+
+h2{
+  font-size: 2rem;
+}
+
+p{
+  margin-top: 5%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.img-container
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 70vh;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.office-img{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  transition: all 0.5s;
+  cursor:pointer;
+}
+
+.office-img:hover {
+  transform: scale(0.995);
+  filter: brightness(0.8);
+  color: black;
+}
+
+.office-img {
+  transition: opacity 0.3s ease;
+  background-size: cover;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.office-img:hover .overlay {
+  opacity: 1;
+  width: 100%;
+}
+
+
+.img-1{
+  background-image: url("../../../assets/img/careers-section/team-work.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-2{
+  background-image: url("../../../assets/img/careers-section/flexibility-transformed.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-3{
+  background-image: url("../../../assets/img/careers-section/growing-oportunities.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-4{
+  background-image: url("../../../assets/img/careers-section/enjoy.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image-text{
+  margin-top: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  font-size: 2em;
+  height: 10%;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+/*------ Mobile Sector ---------*/
+
+@media (max-width:768px)
+{
+    .career-container{
+      height: 100%;
+    }
+    .img-sector{
+      height: 20vh;
+      display: none;
+    }
+
+    .img-sector::after{
+      height: 20vh;
+      display: none;
+    }
+
+    .info-container{
+      display: flex;
+      height: 200vh;
+    }
+
+    .title-container{
+      margin-top: 0%;
+      height: 15vh;
+    }
+
+    h1{
+      font-size: 10vw;
+    }
+
+    .img-container{
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 150vh;
+    }
+
+    .office-img
+    {
+      width: 100%;
+      height: 20%;
+      border-radius: 0px;
+      transition: filter 0.3s ease;
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.7);
+      opacity: 0;
+      cursor:pointer;
+      transition: opacity 0.3s ease;
+    }
+
+    .office-img::after{
+      position: absolute;
+      content: "";
+      color:white;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.250);
+    }
+
+    .office-img::hover .overlay{
+        opacity: 1;
+    }
+
+    .overlay{
+      display: flex;
+      width: 100%;
+      height: 20%;
+      border-radius: 0px;
+    }
+
+    .image-text{
+      margin-top: 20%;
+      font-weight: 100;
+      font-size: 1.5rem;
+    }
+
+    .career-info{
+      height: 100%;
+      justify-content: center;
+    }
+
+    .talent-community-sector{
+      flex-direction: column-reverse;
+      align-content: center;
+      height: 100vh;
+    }
+
+    .text-container{
+      width: 80%;
+      height: 50%;
+      justify-content: center;
+      border: none;
+      margin-top: 10%;
+    }
+
+    .talent-community{
+      width: 100%;
+      height: 50%;
+      margin-top: 0%;
+    }
+
+    h2{
+      font-size: 1.5rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    p{
+      font-size: 3vw;
+      text-align: center;
+    }
+
+}

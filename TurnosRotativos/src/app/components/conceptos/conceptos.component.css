@@ -1,0 +1,43 @@
+#container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid green;
+}
+
+.relleno{
+  width: 100%;
+  height: 40%;
+  border: 2px solid rebeccapurple;
+}
+
+.tabla-container{
+  width: 80%;
+  height: 25%;
+  border: .5px solid rgb(189, 189, 189);
+  border-radius: 10px;
+}
+
+.tabla{
+  width: 100%;
+  height: 100%;
+}
+
+.celda
+{
+  width: 25%;
+  text-align: center;
+  border-bottom: .5px solid rgb(189, 189, 189);
+}
+
+.cabecera-tabla{
+  height: 25%;
+  font-weight: 100;
+}
+
+
+
